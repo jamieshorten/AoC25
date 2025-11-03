@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 6.2
 import PackageDescription
 
 let dependencies: [Target.Dependency] = [
@@ -9,19 +9,19 @@ let dependencies: [Target.Dependency] = [
 
 let package = Package(
   name: "AdventOfCode",
-  platforms: [.macOS(.v13), .iOS(.v16), .watchOS(.v9), .tvOS(.v16)],
+  platforms: [.macOS(.v26), .iOS(.v26), .watchOS(.v26), .tvOS(.v26)],
   dependencies: [
     .package(
-      url: "https://github.com/apple/swift-algorithms.git",
+      url: "https://github.com/apple/swift-algorithms",
       .upToNextMajor(from: "1.2.0")),
     .package(
-      url: "https://github.com/apple/swift-collections.git",
-      .upToNextMajor(from: "1.1.4")),
+      url: "https://github.com/apple/swift-collections",
+            .upToNextMajor(from: "1.3.0")),
     .package(
-      url: "https://github.com/apple/swift-argument-parser.git",
+      url: "https://github.com/apple/swift-argument-parser",
       .upToNextMajor(from: "1.5.0")),
     .package(
-      url: "https://github.com/swiftlang/swift-format.git",
+      url: "https://github.com/swiftlang/swift-format",
       .upToNextMajor(from: "600.0.0"))
   ],
   targets: [
